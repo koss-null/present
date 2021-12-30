@@ -70,6 +70,11 @@ body {
     z-index: 8;
 }
 
+@font-face {
+    font-family: Veles;
+    src: url('Veles-Regular.0.9.2.otf');
+}
+
 .letter {
     background: #dedede;
     width: 860px;
@@ -78,12 +83,13 @@ body {
     height: 600px;
     border-radius: 0px;
     text-align: center;
-    font-family: 'Kalam', cursive;
+    font-family: 'Veles';
+    src: url('Veles-Regular.0.9.2.otf');
     background-image: url("./white-texture.jpeg");
     font-size: 26px;
     font-weight: bold;
     position: relative;
-    color: rgb(99, 87, 87);
+    color: rgb(40, 36, 90);
     z-index: 3;
 }
 
@@ -113,7 +119,7 @@ body {
 
 @keyframes pullLetter {
     0% {
-        transform: translateY(-100px);
+        transform: translateY(-100px) rotateY(180deg);
     }
     35% {
         transform: translateY(-200px);
